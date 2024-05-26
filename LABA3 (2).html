@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop 2.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .container table {
+            width: 100%;
+        }
+        .container th, .container td {
+            padding: 5px;
+        }
+        .container input[type="text"], .container select, .container textarea {
+            width: 100%;
+        }
+        .container input[type="submit"] {
+            display: block;
+            margin: 10px 0 0 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <th colspan="2">Pizza Shop 2.0</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="name" placeholder="Enter your name" required></td>
+                </tr>
+                <tr>
+                    <td>Pizza Topping</td>
+                    <td>
+                        <input type="radio" name="topping" value="supreme" required> Supreme<br>
+                        <input type="radio" name="topping" value="vegetarian"> Vegetarian<br>
+                        <input type="radio" name="topping" value="hawaiian"> Hawaiian
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pizza Sauce</td>
+                    <td>
+                        <select name="sauce" required>
+                            <option value="tomato">Tomato</option>
+                            <option value="bbq">BBQ</option>
+                            <option value="alfredo">Alfredo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Optional Extras</td>
+                    <td>
+                        <input type="checkbox" name="extras" value="extra_cheese"> Extra Cheese<br>
+                        <input type="checkbox" name="extras" value="gluten_free_base"> Gluten Free Base
+                    </td>
+                </tr>
+                <tr>
+                    <td>Delivery Instructions:</td>
+                    <td><textarea name="instructions" placeholder="Enter any delivery instructions"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Send my Order">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
